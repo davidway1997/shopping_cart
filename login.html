@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>購物商城-登入</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link type="text/css" rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-warning mb-5" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">購物商城</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php" aria-current="page">首頁 <span
+                  class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">會員登入</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6 mb-4">
+          <form action="login.php" method="POST">
+            <!-- Account input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">手機</label>
+              <input type="text" id="form2Example1" class="form-control" name="mobile" />
+
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example2">密碼</label>
+              <input type="password" id="form2Example2" class="form-control" name="passwd" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form2Example1">身份</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="uType" id="rdbGender1" value="buyer">
+                <label class="form-check-label" for="uType">買家</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="uType" id="rdbGender2" value="seller">
+                <label class="form-check-label" for="uType">賣家</label>
+              </div>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">忘記密碼?</a>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="row mb-4">
+
+              <button type="submit" class="btn btn-warning btn-block mb-4">登入</button>
+            </div>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>還不是會員? <a href="register.html">註冊</a></p>
+              <p>馬上註冊一個:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-facebook fa-2x"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-google fa-2x"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-google-plus-square  fa-2x"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-twitter fa-2x"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fa fa-github fa-2x"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!--
+  <script src="https://kit.fontawesome.com/30579bb438.js" crossorigin="anonymous"></script>
+  -->
+</body>
+
+</html>
